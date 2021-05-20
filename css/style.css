@@ -1,0 +1,178 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+    --dark-gray:hsla(0, 0%, 17%, 0.644);
+  }
+
+    /*=====================================*/
+  /*============== 1. GENERAL ==============*/
+    /*=====================================*/
+
+
+  /*============== 1.1 FONTS ==============*/
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 2rem 0rem;
+    font-size: 2rem;
+    color:var(--light-gray);
+    text-transform: uppercase;
+}
+
+p, li, a, button{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p{
+    font-size: 0.8rem;
+    line-height: 25px;
+    color: var(--transparent-white);
+}
+
+.button{
+    transition: all 0.5s;
+    cursor:pointer;
+    margin: 4rem 0rem 0rem 0rem;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 25px;
+    width: 140px;
+    border: none;
+    text-decoration: none;
+  display: inline-block;
+  background-color: #ffff;
+    font-size: 0.8em;
+    box-sizing:border-box;
+}
+
+  /*============== 1.2 STYLING ==============*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: var(--light-gray);
+    margin: 0 20%;
+    height: 100vh;
+    display:grid;
+  place-items:center;
+}
+
+
+
+    /*=====================================*/
+  /*============== 2. CARD ==============*/
+    /*=====================================*/
+
+    .container{
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3rem 3.9rem;
+    }
+
+    .icon{
+        background-size: 10px 30px;
+    }
+
+    .card-1{
+        background-color: var(--bright-orange);
+    }
+
+    .card-2{
+        background-color: var(--dark-cyan);
+    }
+
+    .card-3{
+        background-color: var(--very-dark-cyan);
+    }
+
+    .button-1{
+        color: var(--bright-orange);
+    }
+
+    .button-2{
+        color: var(--dark-cyan);
+    }
+
+    .button-3{
+        color: var(--very-dark-cyan);
+    }
+
+    .raise:hover,
+    .raise:focus {
+      background-color: transparent;
+      color: #ffff;
+      box-shadow: 0px 0px 0px 2px #ffff;
+    }
+
+
+
+
+
+    /*=====================================*/
+  /*============== 3. ATTRIBUTION ==============*/
+    /*=====================================*/
+
+
+    .attribution{
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .attribution p{
+        color:var(--dark-cyan);
+    }
+
+    .attribution > p > a{
+        color:var(--very-dark-cyan);
+
+    }
+
+
+
+        /*=====================================*/
+  /*============== 4. MOBILE ==============*/
+    /*=====================================*/
+
+    @media only screen and (max-width: 800px) {
+        body {
+          height: auto;
+        }
+
+        .container{
+            flex-direction: column;
+            margin: 2rem 0rem;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .button{
+            margin: 2rem 0rem;
+        }
+
+        .card{
+            padding: 2rem 3rem 1rem 3rem;
+        }
+
+        .attribution{
+            position:relative;
+            bottom: 0;
+            margin: auto;
+        }
+    
+
+      }
